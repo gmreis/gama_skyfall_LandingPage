@@ -25,6 +25,15 @@
             <input required ng-model="leadingCtrl.user.profissao" class="form-control" id="profissao" placeholder="Profissão">
           </div>
         </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Gama Academy</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Le Wagon</label>
+        </div>
+        <div class="checkbox disabled">
+          <label><input type="checkbox" value="">Li e aceito os termos de uso</label>
+        </div>
 
         <div class="form-group"> 
           <div class="col-sm-offset-2 col-sm-10">
@@ -35,10 +44,15 @@
     </div>
   </div>
   <div class="row" >
-     <div class="button-custom">
-        <button class="btn btn-default">O que é</button>
-        <button class="btn btn-default">Premiação</button>
-        <button class="btn btn-default">Depoimentos</button>
+    <div class="col-md-4">
+       <button class="btn btn-default">O que é</button>
     </div>
+    <div class="col-md-4">
+       <button class="btn btn-default" ng-click="$ctrl.teste()">Premiação</button>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-default">Depoimentos</button>
+    </div>
+
   </div>
 </div>
