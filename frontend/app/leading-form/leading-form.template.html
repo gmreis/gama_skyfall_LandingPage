@@ -1,0 +1,44 @@
+<div class="container-fluid">
+
+  <header class="container-fluid">
+   <img class="img-header" ng-src="../img/cabecario-01.png" />
+  </header>
+
+  <div class="row">
+    <div class="col-md-8">
+       <img class="img-Layout" ng-src="../img/informacao.png" />
+    </div>
+    <div class="form-custom col-sm-2">
+      <form ng-submit="leadingCtrl.teste()" class="form-horizontal" ng-style="{'background-color': '#7abf42'}">
+        <div class="form-group">
+          <div class="inputField col-sm-10"> 
+            <input required ng-model="leadingCtrl.user.nome" class="form-control" id="nome" placeholder="Nome">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-10"> 
+            <input required ng-model="leadingCtrl.user.email" class="form-control" id="email" placeholder="example@gmail.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-10"> 
+            <input required ng-model="leadingCtrl.user.profissao" class="form-control" id="profissao" placeholder="Profissão">
+          </div>
+        </div>
+
+        <div class="form-group"> 
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Inscreva-se</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row" >
+     <div class="button-custom">
+        <button class="btn btn-default">O que é</button>
+        <button class="btn btn-default">Premiação</button>
+        <button class="btn btn-default">Depoimentos</button>
+    </div>
+  </div>
+</div>

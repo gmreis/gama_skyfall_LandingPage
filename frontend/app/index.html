@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" ng-app="leadingApp">
+  <head>
+    <meta charset="utf-8">
+    <title>PalindromeTester</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+
+    <script src="leading-form/leading-form.module.js"></script>
+    <script src="leading-form/leading-form.component.js"></script>
+
+    <script src="core/core.module.js"></script>
+    <script src="core/carro/carro.module.js"></script>
+    <script src="core/carro/carro.service.js"></script>
+  </head>
+  <body>
+    <div class="view-container">
+      <div ng-view class="view-frame"></div>
+    </div>
+
+  </body>
+</html>
